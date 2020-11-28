@@ -51,6 +51,5 @@ def main(update: Update, context: CallbackContext) -> None:
 if __name__=='__main__':
     updater = Updater(TOKEN)
     updater.dispatcher.add_handler(CommandHandler('start', main))
-    updater.dispatcher.add_handler(CommandHandler('stop', stop))
     updater.start_polling()
     updater.idle()
